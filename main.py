@@ -22,4 +22,7 @@ class Persona:
 Urruti = Persona('Pablo','Urruti',1995,1.8,70,'blanco','castaño claro', 'barba ligera', 'Desarrollador en Ansis','Ingeniero industrial', ['skate','futbol','slack-line','escalada','series','python'])
 
 
-print(f"\n----------------\n{Urruti.nombre} {Urruti.apellido} tiene {Urruti.edad} años.\n----------------\n")
+print(f"\n----------------\n{Urruti.nombre} {Urruti.apellido} tiene {Urruti.edad} años y los siguientes hobbies:\n----------------\n")
+
+for hobby in Urruti.hobbies:
+    print(f"-> {hobby}")
